@@ -1,8 +1,7 @@
 import React, {Fragment} from 'react';
 import classes from "./Layout.css";
 
-const layout = (props) => {
-    console.log(classes);    
+const layout = (props) => { 
     return (
         <Fragment>
             <div>Toolbar, SideDrawer, Backdrop</div>
