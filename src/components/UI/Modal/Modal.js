@@ -5,8 +5,9 @@ import Backdrop from "../Backdrop/Backdrop"
 class Modal extends Component {
 
     //More straightforward approch than with PureComponent because here we do not need to check props.modalClosed which PureComponent would
+    //needs to check for show prop & children (orderSummary)
     shouldComponentUpdate(nextProps, nextState) {
-        return nextProps.show !== this.props.show; //return true
+        return nextProps.show !== this.props.show || nextProps.children !== this.props.children //return true
     }
     
     componentDidUpdate () {
